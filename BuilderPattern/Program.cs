@@ -22,10 +22,10 @@ namespace BuilderPattern
     class RealMaze : Maze
     {
         #region Private Field
-        private char[,] maze = null;
+        private string[,] maze = null;
         #endregion Private Field
 
-        public RealMaze(char[,] maze)
+        public RealMaze(string[,] maze)
         {
             this.maze = maze;
         }
@@ -40,7 +40,7 @@ namespace BuilderPattern
                 string row = "";
                 for (int j = 0; j < this.maze.GetLength(1); j++)
                 {
-                    row = row + this.maze[i, j].ToString();
+                    row = row + this.maze[i, j];
                 }
                 System.Console.WriteLine(row);
             }
@@ -87,28 +87,28 @@ namespace BuilderPattern
     public class PlainBuilder : MazeBuilder
     {
         #region Private Field
-        private char[,] maze = null;
+        private string[,] maze = null;
         #endregion Private Field
 
         public PlainBuilder(int i, int j)
         {
-            this.maze = new char[i, j];
+            this.maze = new string[i, j];
         }
 
         #region implement MazeBuilder
         void MazeBuilder.buildRoad(int i, int j)
         {
-            maze[i, j] = ' ';
+            maze[i, j] = "  ";
         }
 
         void MazeBuilder.buildWall(int i, int j)
         {
-            maze[i, j] = '□';
+            maze[i, j] = "□";
         }
 
         void MazeBuilder.buildTreasure(int i, int j)
         {
-            maze[i, j] = '*';
+            maze[i, j] = "* ";
         }
 
         Maze MazeBuilder.getMaze()
