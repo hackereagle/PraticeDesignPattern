@@ -94,9 +94,9 @@ namespace SingletonPattern
             Task.Run(() =>
             {
                 System.Threading.Thread.Sleep(5000);
-                SingletonThreadSafe s12 = SingletonThreadSafe.Instance;
-                Console.WriteLine($"second: {s12.GetHashCode()}");
-                s12.doSomething();
+                SingletonThreadSafe s22 = SingletonThreadSafe.Instance;
+                Console.WriteLine($"second: {s22.GetHashCode()}");
+                s22.doSomething();
             });
             Console.ReadLine();
         }
