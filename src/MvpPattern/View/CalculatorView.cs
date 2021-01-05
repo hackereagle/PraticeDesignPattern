@@ -20,8 +20,11 @@ namespace MvpPattern.View
                 throw new Exception("Initialize Fail!");
         }
 
+        private Presenter.CalculatorPresenter mCalculatorPresenter;
         private bool Initialize()
         {
+            mCalculatorPresenter = new Presenter.CalculatorPresenter(this);
+
             this.btnOne.Click += ButtonClick;
             this.btnTwo.Click += ButtonClick;
             this.btnThree.Click += ButtonClick;
@@ -41,5 +44,10 @@ namespace MvpPattern.View
         }
 
         public event EventHandler ButtonClick;
+        string ICalculatorView.ResultText
+        {
+            set { this.txtDispInputAndResult.Text = value; }
+            get { return this.txtDispInputAndResult.Text; }
+        }
     }
 }

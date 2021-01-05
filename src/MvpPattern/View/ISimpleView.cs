@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace MvpPattern.View
 {
-    public interface ICalculatorView
+    public interface ISimpleView
     {
-        event EventHandler ButtonClick;
-        string ResultText { set; get; }
+        event EventHandler BtnCalculateClick;
+        string RadiusText { get; set; }
+        string AreaText { get; set; }
     }
 }
