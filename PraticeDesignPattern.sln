@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "SimpleFact
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{FB75FD37-4434-41CD-A359-09FD451CFA63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvpPattern", "src\MvpPattern\MvpPattern.csproj", "{8F90A3AB-D5EB-4822-B275-F5368775845D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{FB75FD37-4434-41CD-A359-09FD451CFA63}.Release|x64.Build.0 = Release|Any CPU
 		{FB75FD37-4434-41CD-A359-09FD451CFA63}.Release|x86.ActiveCfg = Release|Any CPU
 		{FB75FD37-4434-41CD-A359-09FD451CFA63}.Release|x86.Build.0 = Release|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Debug|x64.Build.0 = Debug|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Debug|x86.Build.0 = Debug|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Release|x64.ActiveCfg = Release|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Release|x64.Build.0 = Release|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Release|x86.ActiveCfg = Release|Any CPU
+		{8F90A3AB-D5EB-4822-B275-F5368775845D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
