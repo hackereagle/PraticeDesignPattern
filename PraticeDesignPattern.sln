@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "src\Build
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "src\SingletonPattern\SingletonPattern.csproj", "{C187B2B3-E9D5-47B3-B00D-55C844B1CAB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "SimpleFactory\SimpleFactory.csproj", "{9668B118-AC70-4BDC-813C-D0B32C9EDF65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "src\SimpleFactory\SimpleFactory.csproj", "{9668B118-AC70-4BDC-813C-D0B32C9EDF65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{FB75FD37-4434-41CD-A359-09FD451CFA63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "src\AbstractFactory\AbstractFactory.csproj", "{FB75FD37-4434-41CD-A359-09FD451CFA63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvpPattern", "src\MvpPattern\MvpPattern.csproj", "{8F90A3AB-D5EB-4822-B275-F5368775845D}"
 EndProject
