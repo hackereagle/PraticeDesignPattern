@@ -17,7 +17,7 @@ namespace AbstractFactory
             this.height = height;
         }
 
-        void Paint(IPointCornerFactory factory)
+        public void Paint(IPointCornerFactory factory)
         {
             IPoint point = factory.GetPoint();
             ICorner corner = factory.GetCorner();
@@ -26,7 +26,7 @@ namespace AbstractFactory
             point.Line(width - 2);
             corner.RightUp();
             Console.Write("\n");
-            for (int i = 0; i < height - 2, i++)
+            for (int i = 0; i < height - 2; i++)
             {
                 point.Line(width);
                 Console.Write("\n");
@@ -41,6 +41,11 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
+            Rectangle rect = new Rectangle(20, 10);
+            IPointCornerFactory factory = new Type1Factory();
+            rect.Paint(factory);
+
+            Console.ReadLine();
         }
     }
 }
