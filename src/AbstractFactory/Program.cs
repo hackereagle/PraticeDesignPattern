@@ -42,7 +42,8 @@ namespace AbstractFactory
         static void Main(string[] args)
         {
             Rectangle rect = new Rectangle(20, 10);
-            IPointCornerFactory factory = new Type1Factory();
+            //IPointCornerFactory factory = new Type1Factory();
+            IPointCornerFactory factory = new Type2Factory();
             rect.Paint(factory);
 
             Console.ReadLine();
