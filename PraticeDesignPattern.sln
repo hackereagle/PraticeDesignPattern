@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypePattern", "src\Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatePatternForAOI", "src\StatePatternForAOI\StatePatternForAOI.csproj", "{3117E85C-9518-4B03-8C35-A0BC9A46E2C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "src\CommandPattern\CommandPattern.csproj", "{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,18 @@ Global
 		{3117E85C-9518-4B03-8C35-A0BC9A46E2C6}.Release|x64.Build.0 = Release|Any CPU
 		{3117E85C-9518-4B03-8C35-A0BC9A46E2C6}.Release|x86.ActiveCfg = Release|Any CPU
 		{3117E85C-9518-4B03-8C35-A0BC9A46E2C6}.Release|x86.Build.0 = Release|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Debug|x64.Build.0 = Debug|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Debug|x86.Build.0 = Debug|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Release|x64.ActiveCfg = Release|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Release|x64.Build.0 = Release|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Release|x86.ActiveCfg = Release|Any CPU
+		{3B0562F4-9C84-4F70-ADA8-3F5D7C24B4D7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
