@@ -5,7 +5,7 @@
 class SigletonPattern
 {
 public:
-    static SigletonPattern *GetInsance();
+    static SigletonPattern GetInsance();
     ~SigletonPattern();
     void AsyncWrite(char *msg);
 
