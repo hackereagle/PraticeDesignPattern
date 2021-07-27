@@ -29,9 +29,62 @@ namespace StatePattern_InGame
             }
             else
             {
-                warrior.SetState(new );
+                warrior.SetState(new FuryState());
                 warrior.Move();
             }
+        }
+    }
+
+    public class FuryState : State
+    {
+        public void Move(Warrior warrior)
+        {
+            int hp = warrior.HP;
+            if (hp > 70)
+            {
+                warrior.SetState(new NormalState());
+                warrior.Move();
+            }
+            else if (hp <= 30)
+            {
+                warrior.SetState(new DesperateState());
+                warrior.Move();
+            }
+            else
+            {
+                Console.WriteLine($"HP = {warrior.HP}, furry state so attack add 30%!");
+            }
+
+        }
+    }
+
+    public class DesperateState : State
+    {
+        public void Move(Warrior warrior)
+        {
+            int hp = warrior.HP;
+            if (hp == 0)
+            {
+                warrior.SetState(new UnableState());
+                warrior.Move();
+            }
+            else if (hp > 30)
+            {
+                warrior.SetState(new FuryState());
+                warrior.Move();
+            }
+            else
+            {
+                Console.WriteLine($"HP = {hp}, do-or-die defenders, attack increase 30% and defense increase 50%");
+            }
+        }
+    }
+
+    public class UnableState : State
+    {
+        public void Move(Warrior warrior)
+        {
+            Console.WriteLine($"HP = {warrior.HP}, could not fight!");
         }
     }
 }

@@ -22,9 +22,16 @@ namespace StatePattern_InGame
 
         public void Heal(int heal)
         {
-            this.mHp = this.mHp + heal;
-            if (this.mHp > 100)
-                this.mHp = 100;
+            if (this.mHp != 0)
+            { 
+                this.mHp = this.mHp + heal;
+                if (this.mHp > 100)
+                    this.mHp = 100;
+            }
+            else
+            {
+                Console.WriteLine($"HP = {this.mHp}, heal invalid!");
+            }
         }
 
         public void GetDamage(int damage)
@@ -49,6 +56,23 @@ namespace StatePattern_InGame
     {
         static void Main(string[] args)
         {
+            Warrior warrior = new Warrior();
+
+            warrior.Move();
+
+            warrior.GetDamage(30);
+            warrior.Move();
+            warrior.GetDamage(50);
+            warrior.Move();
+
+            warrior.Heal(120);
+            warrior.Move();
+
+            warrior.GetDamage(110);
+            warrior.Move();
+            warrior.Heal(20);
+
+            Console.ReadLine();
         }
     }
 }
